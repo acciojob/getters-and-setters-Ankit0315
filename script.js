@@ -5,27 +5,31 @@ class Person {
 		this.name=name;
 		this.age=age;
 	}
-	get name(){
+	getname(){
 		return this.name;
 	}
-	set age(){
-		return this.age;
+	setage(age){
+		this.age;
 	}
 	
 }
 
 class Student extends Person {
-	
+	constructor(name,age){
+		super(name,age);
+	}
 	study(){
-		console.log(`${name} is studying`);
+		console.log(`${super.getname()}is studying`);
 	}
 }
 
 class Teacher extends Person {
-
+constructor(name,age){
+		super(name,age);
+	}
 	teach()
 	{
-		console.log(`${name} is teaching`);
+		console.log(`${super.getname()}is teaching`);
 	}
 	
 }
