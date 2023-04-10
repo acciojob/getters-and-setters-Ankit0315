@@ -1,15 +1,13 @@
-//complete this code
 class Person {
-	constructor(name,age)
-	{
+	constructor(name,age){
 		this.name=name;
 		this.age=age;
 	}
-	getname(){
+	getName(){
 		return this.name;
 	}
-	setage(age){
-		this.age;
+	setAge(age){
+		this.age=age;
 	}
 	
 }
@@ -19,19 +17,17 @@ class Student extends Person {
 		super(name,age);
 	}
 	study(){
-		console.log(`${super.getname()}is studying`);
+		console.log(`${super.getName()} is studying`)
 	}
 }
 
 class Teacher extends Person {
-constructor(name,age){
+	constructor(name,age){
 		super(name,age);
 	}
-	teach()
-	{
-		console.log(`${super.getname()}is teaching`);
+	teach(){
+		console.log(`${super.getName()} is teaching`)
 	}
-	
 }
 
 // Do not change the code below this line
