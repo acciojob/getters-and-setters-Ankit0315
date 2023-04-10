@@ -15,14 +15,14 @@ class Person {
 }
 
 class Student extends Person {
-	super();
+	
 	study(){
 		console.log(`${name} is studying`);
 	}
 }
 
 class Teacher extends Person {
-super();
+
 	teach()
 	{
 		console.log(`${name} is teaching`);
